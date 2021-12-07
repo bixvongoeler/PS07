@@ -1,0 +1,25 @@
+---
+title: "README"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r packages, include=FALSE}
+library(tidyverse)
+```
+
+### About Me
+Hi, I'm Bix. I am currently a Student at Northampton High School. I have some basic knowledge of both R studio, and Python. 
+
+
+### Heres a ggplot!
+
+This maps the pressure of some space, based off of the temperature of that space
+
+```{r pressure, echo=FALSE}
+ggplot(data = pressure, mapping = aes(x = temperature, y = pressure)) +
+  geom_point(size = 2, color = "black")
+```
